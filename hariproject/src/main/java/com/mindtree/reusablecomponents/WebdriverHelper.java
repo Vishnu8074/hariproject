@@ -18,12 +18,12 @@ public class WebdriverHelper {
 			
 		
 		prop=new Properties();
-		FileInputStream fi=new FileInputStream("E:\\selenium\\selenium_programs\\hariproject\\testdataentry\\data.properties");
+		FileInputStream fi=new FileInputStream("C:\\Users\\vishnu vardhan reddy\\git\\hariproject\\hariproject\\src\\main\\resources\\data.properties");
 		prop.load(fi);
 		String name=prop.getProperty("browser");
 		if(name.equalsIgnoreCase("google"))
 		{
-		System.setProperty("webdriver.chrome.driver","E:\\selenium\\selenium_programs\\hariproject\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\vishnu vardhan reddy\\git\\hariproject\\hariproject\\driver\\chromedriver.exe");
 		driver=new ChromeDriver();
 		
 		}

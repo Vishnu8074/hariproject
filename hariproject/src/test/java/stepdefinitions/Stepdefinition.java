@@ -2,12 +2,11 @@ package stepdefinitions;
 
 
 import io.cucumber.java.en.Given;
-
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.And;
-import io.cucumber.junit.Cucumber;
-import org.junit.runner.RunWith;
+//import io.cucumber.junit.Cucumber;
+//import org.junit.runner.RunWith;
 
 import com.mindtree.pageobject.Loginpage;
 import com.mindtree.reusablecomponents.WebdriverHelper;
