@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.mindtree.utilities.Listener"/>
+    <listener class-name="com.mindtree.utilities.ExtentReporterNG"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.mindtree.runner.testrunn">
+      <class name="com.mindtree.testobject.Mobilectest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="end"/>
+          <include name="mobiletest"/>
+          <include name="initial"/>
         </methods>
-      </class> <!-- com.mindtree.runner.testrunn -->
+      </class> <!-- com.mindtree.testobject.Mobilectest -->
+      <class name="com.mindtree.testobject.Loginpagetest">
+        <methods>
+          <include name="logintest" invocation-numbers="0 1 2"/>
+          <include name="close"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.mindtree.testobject.Loginpagetest -->
+      <class name="com.mindtree.testobject.Bookstest">
+        <methods>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="btest"/>
+        </methods>
+      </class> <!-- com.mindtree.testobject.Bookstest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
